@@ -1,0 +1,9 @@
+node_modules
+/dist
+
+npm-debug.log*
+build/Release
+
+.npm
+*.log
+server/config/dev.js

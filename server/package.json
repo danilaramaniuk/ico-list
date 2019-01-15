@@ -1,0 +1,29 @@
+{
+  "name": "ico-test-server",
+  "version": "1.0.0",
+  "description": "graphQL api",
+  "main": "index.js",
+  "author": "DanilaRamaniuk",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js --exec babel-node",
+    "start": "babel-node index.js",
+    "lint": "eslint ./**/*.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^2.5.1",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3",
+    "nodemon": "^1.12.1"
+  }
+}

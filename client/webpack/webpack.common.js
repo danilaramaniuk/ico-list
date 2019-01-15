@@ -1,0 +1,36 @@
+const Path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+module.exports = {
+  entry: {
+    app: [
+      'babel-polyfill',
+      Path.resolve(__dirname, '../src/index.js'),
+    ],
+  },
+  output: {
+    path: Path.join(__dirname, '../build'),
+    filename: 'js/[name].js',
+    publicPath: '/',
+  },
+  plugins: [
+    new CleanWebpackPlugin(['build'], { root: Path.resolve(__dirname, '..') }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        exclude: /(node_modules|bower_components)/,
+        use: 'babel-loader',
+      },
+      {
+        test: /(\.less)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'less-loader',
+        ],
+      },
+    ],
+  },
+};
