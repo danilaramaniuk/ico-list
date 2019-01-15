@@ -1,0 +1,182 @@
+[
+  {
+    "address": "rnu2xb48synW6Y1AU8ZT85OX0CWBD21N",
+    "currency": "LTC",
+    "value": 1822819,
+    "txid": "4911922634ee442f6704ed6cf5f860dbe70e78d1c20414d6d6f2eb4bc81e1641"
+  },
+  {
+    "address": "2siyirlxk5Q96IPZD5C4On4da7hyvrxf",
+    "currency": "BTC",
+    "value": 2001913,
+    "txid": "482fc0d2502ae357bd898f4d9aed3c5f20d0f3966c49d7d06edb0cf6f50e1ce5"
+  },
+  {
+    "address": "LQXH0O77LVLRBUQALTCXRJ4WUNLLI6KD",
+    "currency": "ETH",
+    "value": 8288838,
+    "txid": "2c1bc07b4f9aedf51204115d8aaaea36b3415e3168b28c660098f82cde889b3d"
+  },
+  {
+    "address": "YDJS6K6GSNK4w5lrzjujucCL0AFVAZBF",
+    "currency": "BTC",
+    "value": 4036299,
+    "txid": "efc6dd5a80d8ff165f2f6d5d7296432911c013ac0eebb4f90a630fe17ab29987"
+  },
+  {
+    "address": "7PNNGCRAPVVkvq60tjtd7ownvnvj6t2d",
+    "currency": "LTC",
+    "value": 2588486,
+    "txid": "dcf77e36c6f5763b917fe2ec4a6f60d1a05dcfae92215cbf7abc6c786bd475d9"
+  },
+  {
+    "address": "zyeys38x8k8x59w9l1y5983ROB3W0F5Q",
+    "currency": "BTC",
+    "value": 2348841,
+    "txid": "0e512004851882f3b7636992776713148cf2a476f8887da19d9db579f9578171"
+  },
+  {
+    "address": "9X4FEF34N06xkm6oy6pzwfHSGI63TGL6",
+    "currency": "BTC",
+    "value": 4406425,
+    "txid": "585546e7b1ba348ba0eff69f5c9534390bb6f2ed81e980b2182353ae443d0987"
+  },
+  {
+    "address": "59dlcsc5cs86lc8a2igbljultvi99v0b",
+    "currency": "LTC",
+    "value": 6171355,
+    "txid": "170c6fc07d55e9d2cb42dbf7b866ed29d99b6ead588cad32d943193abf44cd6e"
+  },
+  {
+    "address": "9x89cciqnzuowslhd5ykx4phhbidllbW",
+    "currency": "LTC",
+    "value": 8643740,
+    "txid": "889e5e6785271e7e1456725ca4f4bd533784ff6fa6d1fd2620029102bb3fa5e1"
+  },
+  {
+    "address": "VLUXR0MD8GB57nsy0bamr56p9yxlybmx",
+    "currency": "BTC",
+    "value": 1628830,
+    "txid": "8512e9d70949a008e80525b99de28abf6657113d7b8dbef88134b04bf29e7c43"
+  },
+  {
+    "address": "6kxjd1p605366JQY4XIFR3MO8GIKXZ1L",
+    "currency": "LTC",
+    "value": 5846954,
+    "txid": "4ba54772bc788d1b9661d0fc4b608dcbf5234f409efd371b64c3671d5a1cfeec"
+  },
+  {
+    "address": "F51FPD01IZ5o43ozivhqf3574TFIP384",
+    "currency": "LTC",
+    "value": 5929606,
+    "txid": "af5a12dd445a8715c97de22e9994a25620bd58ba2885d3e34481df6794396c94"
+  },
+  {
+    "address": "YIHD1AYSN7fw6xv48xtprynkl4is0mek",
+    "currency": "LTC",
+    "value": 3940474,
+    "txid": "4868f3760993e2490421f6f1a42ba5cc8eba97220ba765f1ffeb696190c4fc5f"
+  },
+  {
+    "address": "MBOVY2MIQUMLUIKZHBXMNtnjzv5407gQ",
+    "currency": "ETH",
+    "value": 2380180,
+    "txid": "32c5bf9471b1c1aa09c2526e6a5f93eeefedb2d04085682760d81f466889bbfa"
+  },
+  {
+    "address": "tiqxens1utVMYPO0S5PTmozfq1xk99o3",
+    "currency": "ETH",
+    "value": 8382675,
+    "txid": "062e226505bb39a2c48945f40a41afa5bb5b02db68aaada125445b0c7d585213"
+  },
+  {
+    "address": "PZIL4Y2EW78G15YY354ERkii34a91tsi",
+    "currency": "LTC",
+    "value": 7413756,
+    "txid": "1d1205fb9a87c63643b86d3f65dcf6e94501d039b010c492702e7cd7fa764079"
+  },
+  {
+    "address": "6L21GWJ0Y08o0dpj2uu31ing8oy88748",
+    "currency": "ETH",
+    "value": 1131284,
+    "txid": "625b7736b60abaa06584a394d64e745783877352a76719c051be7af93a3df55e"
+  },
+  {
+    "address": "F7RE8WRVV4c6emqtlgo86xbvsf7qi66l",
+    "currency": "LTC",
+    "value": 6185713,
+    "txid": "69cf06f97015152ff7c37d76ebbadd38e9a3989b59e66bb72a96391be86cb367"
+  },
+  {
+    "address": "BLH767JIANLM6MU7IFEN0DLVT2NXZFML",
+    "currency": "BTC",
+    "value": 8275061,
+    "txid": "7ee4493ef842a368b533614189b7fc35ff26179d84e30b2722ddee0b410372e7"
+  },
+  {
+    "address": "TLNNVOUJGJiqxm5scc9qGEILA72KCDFL",
+    "currency": "LTC",
+    "value": 6457126,
+    "txid": "9495ee94899485b8a7ed6fad5ae989ee4d2c3322cc1ef3d844d3a9b096d9f1ea"
+  },
+  {
+    "address": "b3kc0ik74q44V804VEAJGNGHOLCN7RT0",
+    "currency": "LTC",
+    "value": 2923240,
+    "txid": "416b8aa4fb9e8833d3f16afed5a7a164cbef60e892bcd5b6f09c3bb40e2a7d61"
+  },
+  {
+    "address": "bb43gtcp4ag0UT015U9O3ODu4sjbrjvw",
+    "currency": "ETH",
+    "value": 478559,
+    "txid": "a81836c6cd7d82f08cb1db2adc17bb9921564ef40a714f028b522b87aaf93619"
+  },
+  {
+    "address": "etjtwp180b0V2G3X2YY42pykz5mhnyn5",
+    "currency": "LTC",
+    "value": 5794432,
+    "txid": "0aab17dccb19e19643901e13db958fd552fb4daa21d6143a84ef4aaf5cfa7ae3"
+  },
+  {
+    "address": "i9tlj5e7n7hVYXQRTI8AR1rpqeq8tbcr",
+    "currency": "BTC",
+    "value": 7046258,
+    "txid": "e549c89ea1718a6a3cbe0e9f6b3f4af0f941a4bbf60784d121f56441b9c8d6e2"
+  },
+  {
+    "address": "pgih6gnq2lhcp9xz70dz69V4DIU6XOH4",
+    "currency": "BTC",
+    "value": 6808348,
+    "txid": "1533cf72b99f1849fea79b7220ce2b13a9db98144ddb3861888c8b591a035efe"
+  },
+  {
+    "address": "qfao7tz6kIIOWXQPHE3UPHFIF5B7WJ77",
+    "currency": "BTC",
+    "value": 3811715,
+    "txid": "110c78f98fb744277e01902e4ea46c77ee2f8d49ee8f4b188cd27d2a688e5681"
+  },
+  {
+    "address": "KU3RJJJEVMCKYOY2SLNZ6hjej6qvzjmq",
+    "currency": "LTC",
+    "value": 6977542,
+    "txid": "13d77616ccbbfe7b8a88b70feb1437b7c0b026ae03f9e2761f157be9fd1fc35d"
+  },
+  {
+    "address": "ot6zn3asusrQ3AQM94Q8BQ7JLSUYXV57",
+    "currency": "BTC",
+    "value": 6061679,
+    "txid": "03e727568060f2b046b659438dbed32b2c60e6c5e63239768523094a7bd3f406"
+  },
+  {
+    "address": "bp7bvzhidzhvyg48l0k7ryicz3kmb9mv",
+    "currency": "LTC",
+    "value": 3840393,
+    "txid": "120b49c04cfb665e1e22ea46eb7a6ce61b0cec39f51ad01b94dde196f409579b"
+  },
+  {
+    "address": "TR4HMMY9DT0hfkx5jlybpromcy494zae",
+    "currency": "LTC",
+    "value": 6414034,
+    "txid": "e2caa8677081d762be66f499fce0376ee9acd51061fe720064927e08ff30400b"
+  }
+]
