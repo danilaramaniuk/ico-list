@@ -16,6 +16,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['build'], { root: Path.resolve(__dirname, '..') }),
   ],
+  resolve: {
+    alias: {
+      '~': Path.resolve(__dirname, '../src'),
+    },
+  },
   module: {
     rules: [
       {
