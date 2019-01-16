@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa hIBYkg"
+>
+  <div
+    className="sc-bwzfXH APLCW"
+  >
+    <div
+      className="sc-htpNat eIcVkJ"
+    >
+      Bitcoin
+    </div>
+    <div
+      className="sc-htpNat eIcVkJ"
+    >
+      Ethereum
+    </div>
+    <div
+      className="sc-htpNat eIcVkJ"
+    >
+      Litecoin
+    </div>
+    <div
+      className="sc-htpNat eIcVkJ"
+    >
+      Common
+    </div>
+  </div>
+  <div
+    className="sc-bxivhb cAsPOu"
+  >
+    <div>
+      LTC
+       - 
+      1822819
+    </div>
+    <div>
+      BTC
+       - 
+      2001913
+    </div>
+    <div>
+      ETH
+       - 
+      8288838
+    </div>
+  </div>
+</div>
+`;
