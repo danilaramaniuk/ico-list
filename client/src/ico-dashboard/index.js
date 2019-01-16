@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 import ContributionModel from '~/common/models/contribution';
 import { setItems as setItemsAction } from './actions';
+import CryptocurrencyContent from './components/cryptocurrency-content';
 
 const ICODashboardWrapper = styled.div`
   display: flex;
@@ -28,7 +29,7 @@ const MenuItem = styled.div`
 const Content = styled.div`
   width: 100%;
   overflow: auto;
-  padding: 4px 16px;
+  padding: 16px;
 `;
 
 export class ICODashboard extends PureComponent {
@@ -62,10 +63,7 @@ export class ICODashboard extends PureComponent {
           <MenuItem>Common</MenuItem>
         </Menu>
         <Content>
-          {
-            contributions.map(({ currency, value, txid }) =>
-              (<div key={txid}>{currency} - {value}</div>))
-          }
+          <CryptocurrencyContent contributions={contributions} />
         </Content>
       </ICODashboardWrapper>
     );

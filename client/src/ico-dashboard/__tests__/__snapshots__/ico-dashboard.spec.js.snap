@@ -29,22 +29,10 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-bxivhb cAsPOu"
+    className="sc-bxivhb hgdDWp"
   >
     <div>
-      LTC
-       - 
-      1822819
-    </div>
-    <div>
-      BTC
-       - 
-      2001913
-    </div>
-    <div>
-      ETH
-       - 
-      8288838
+      CryptocurrencyContent
     </div>
   </div>
 </div>
