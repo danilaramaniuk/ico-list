@@ -6,7 +6,9 @@ export default class ContributionModel {
       query: `{
         contributions {
           address,
-          value
+          currency,
+          value,
+          txid
         }
       }`,
     };
