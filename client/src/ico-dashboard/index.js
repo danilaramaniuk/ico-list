@@ -5,25 +5,12 @@ import { connect } from 'react-redux';
 
 import ContributionModel from '~/common/models/contribution';
 import { setItems as setItemsAction } from './actions';
-import CryptocurrencyContent from './components/cryptocurrency-content';
+import { CryptocurrencyContent, Menu, MenuItem } from './components';
+import { BTC, LTC, ETH } from './constants';
 
 const ICODashboardWrapper = styled.div`
   display: flex;
   height: 100%;
-`;
-
-const Menu = styled.div`
-  min-width: 200px;
-  border-right: 4px solid;
-`;
-
-const MenuItem = styled.div`
-  height: 50px;
-  line-height: 50px;
-  padding: 12px;
-  font-size: 32px;
-  border-bottom: 4px solid;
-  cursor: pointer;
 `;
 
 const Content = styled.div`
@@ -31,6 +18,21 @@ const Content = styled.div`
   overflow: auto;
   padding: 16px;
 `;
+
+const menuItems = [
+  {
+    title: 'Bitcoin',
+    currency: BTC,
+  },
+  {
+    title: 'Litecoin',
+    currency: LTC,
+  },
+  {
+    title: 'Ethereum',
+    currency: ETH,
+  },
+];
 
 export class ICODashboard extends PureComponent {
   static propTypes = {
@@ -43,6 +45,10 @@ export class ICODashboard extends PureComponent {
     setItems: PropTypes.func.isRequired,
   };
 
+  state = {
+    currentTab: BTC,
+  }
+
   componentDidMount = async () => {
     const { setItems } = this.props;
     const response = await ContributionModel.getAllContribution();
@@ -51,19 +57,36 @@ export class ICODashboard extends PureComponent {
     setItems(data.contributions);
   }
 
-  render() {
+  get contributions() {
     const { contributions } = this.props;
+    const { currentTab } = this.state;
 
+    return contributions.filter(({ currency }) => currency === currentTab);
+  }
+
+  get menuItems() {
+    return menuItems.map(({ title, currency }) => (<MenuItem
+      title={title}
+      onClick={this.clickMenuItem}
+      key={title}
+      currency={currency}
+    />));
+  }
+
+  clickMenuItem = (currentTab) => {
+    this.setState({
+      currentTab,
+    });
+  };
+
+  render() {
     return (
       <ICODashboardWrapper>
         <Menu>
-          <MenuItem>Bitcoin</MenuItem>
-          <MenuItem>Ethereum</MenuItem>
-          <MenuItem>Litecoin</MenuItem>
-          <MenuItem>Common</MenuItem>
+          {this.menuItems}
         </Menu>
         <Content>
-          <CryptocurrencyContent contributions={contributions} />
+          <CryptocurrencyContent contributions={this.contributions} />
         </Content>
       </ICODashboardWrapper>
     );

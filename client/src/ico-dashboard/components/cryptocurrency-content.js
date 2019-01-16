@@ -22,26 +22,23 @@ export default class CryptocurrencyContent extends PureComponent {
     })).isRequired,
   };
 
-  get contributions() {
+  render() {
     const { contributions } = this.props;
 
-    return contributions.filter(({ currency }) => currency === 'BTC');
-  }
-  render() {
     const data = {
-      labels: this.contributions.map((item, index) => index + 1),
+      labels: contributions.map((item, index) => index + 1),
       datasets: [
         {
-          data: this.contributions.map(({ value }) => value),
+          data: contributions.map(({ value }) => value),
         },
       ],
     };
 
     return (
       <Fragment>
-        <Bar data={data} options={options} width={1200} height={600} />
+        <Bar data={data} options={options} width={1000} height={600} />
         {
-          this.contributions.map(({ currency, value, txid }) =>
+          contributions.map(({ currency, value, txid }) =>
               (<div key={txid}>{currency} - {value}</div>))
         }
       </Fragment>
