@@ -1,7 +1,6 @@
 module.exports = {
   moduleNameMapper: {
     '~(.*)$': '<rootDir>/src/$1',
-    '(\\.less|\\.css)$': 'identity-obj-proxy',
   },
   testURL: 'http://localhost',
   moduleFileExtensions: ['js'],

@@ -38,7 +38,6 @@ module.exports = merge(common, {
         removeStyleLinkTypeAttributes: true,
         keepClosingSlash: true,
         minifyJS: true,
-        minifyCSS: true,
         minifyURLs: true,
       },
     }),

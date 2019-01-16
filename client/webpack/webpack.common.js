@@ -28,14 +28,6 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: 'babel-loader',
       },
-      {
-        test: /(\.less)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'less-loader',
-        ],
-      },
     ],
   },
 };
