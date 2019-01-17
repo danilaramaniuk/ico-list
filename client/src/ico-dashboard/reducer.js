@@ -1,12 +1,14 @@
 import { handleActions } from 'redux-actions';
 import { combineReducers } from 'redux';
-import { setItems } from './actions';
+import { setItems, setCurrentTab } from './actions';
 import { reducer as BTCReducer } from './containers/btc-data/builder';
 import { reducer as LTCReducer } from './containers/ltc-data/builder';
 import { reducer as ETHReducer } from './containers/eth-data/builder';
+import { BTC } from './constants';
 
 const initialState = {
   contributions: [],
+  currentTab: BTC,
 };
 
 export default combineReducers({
@@ -15,6 +17,12 @@ export default combineReducers({
       return {
         ...state,
         contributions: payload,
+      };
+    },
+    [setCurrentTab](state, { payload }) {
+      return {
+        ...state,
+        currentTab: payload,
       };
     },
   }, initialState),

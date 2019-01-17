@@ -19,6 +19,6 @@ export default class ContributionModel {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(graphqlQuery),
-    });
+    }).then(r => r.json());
   }
 }
