@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { CryptocurrencyContent } from '../../components';
+import { CryptocurrencyBar } from '../../components';
 import { actions } from './builder';
 
 const mapStateToProps = ({ icoDashboard }) => ({
@@ -12,4 +12,4 @@ const mapDispatchToProps = {
   setBarIndex: actions.setBarIndex,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CryptocurrencyContent);
+export default connect(mapStateToProps, mapDispatchToProps)(CryptocurrencyBar);

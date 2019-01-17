@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-htpNat jgwOvs"
+  className="sc-bxivhb kyyWbM"
 >
   <div
     className="sc-bdVaJa gNjpfy"
@@ -25,9 +25,15 @@ exports[`renders correctly 1`] = `
     >
       Ethereum
     </div>
+    <div
+      className="sc-bwzfXH kkvabS"
+      onClick={[Function]}
+    >
+      Results
+    </div>
   </div>
   <div
-    className="sc-bxivhb hgdDWp"
+    className="sc-ifAKCX gHCZFR"
   />
 </div>
 `;

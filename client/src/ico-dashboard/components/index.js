@@ -1,9 +1,11 @@
-import CryptocurrencyContent from './cryptocurrency-content';
+import CryptocurrencyBar from './cryptocurrency-bar';
 import Menu from './menu';
 import MenuItem from './menu-item';
+import Card from './card';
 
 export {
-  CryptocurrencyContent,
+  CryptocurrencyBar,
   Menu,
   MenuItem,
+  Card,
 };

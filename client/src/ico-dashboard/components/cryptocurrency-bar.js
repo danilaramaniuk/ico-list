@@ -9,7 +9,7 @@ const BarWrapper = styled.div`
   height: 400px;
 `;
 
-export default class CryptocurrencyContent extends PureComponent {
+export default class CryptocurrencyBar extends PureComponent {
   static propTypes = {
     contributions: PropTypes.arrayOf(PropTypes.shape({
       address: PropTypes.string.isRequired,

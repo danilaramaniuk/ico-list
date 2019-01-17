@@ -8,10 +8,11 @@ import {
   setCurrentTab as setCurrentTabAction,
 } from './actions';
 import { Menu, MenuItem } from './components';
-import { BTC, LTC, ETH } from './constants';
+import { BTC, LTC, ETH, ALL } from './constants';
 import BTCContent from './containers/btc-data';
 import LTCContent from './containers/ltc-data';
 import ETHContent from './containers/eth-data';
+import ResultsContent from './containers/results';
 
 const ICODashboardWrapper = styled.div`
   display: flex;
@@ -36,6 +37,10 @@ const menuItems = [
   {
     title: 'Ethereum',
     currency: ETH,
+  },
+  {
+    title: 'Results',
+    currency: ALL,
   },
 ];
 
@@ -75,6 +80,7 @@ export class ICODashboard extends PureComponent {
           { currentTab === BTC && <BTCContent />}
           { currentTab === LTC && <LTCContent />}
           { currentTab === ETH && <ETHContent />}
+          { currentTab === ALL && <ResultsContent />}
         </Content>
       </ICODashboardWrapper>
     );
