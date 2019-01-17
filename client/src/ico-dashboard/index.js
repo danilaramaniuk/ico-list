@@ -94,7 +94,7 @@ export class ICODashboard extends PureComponent {
 }
 
 const mapStateToProps = ({ icoDashboard }) => ({
-  contributions: icoDashboard.contributions,
+  contributions: icoDashboard.common.contributions,
 });
 
 const mapDispatchToProps = {
