@@ -4,6 +4,7 @@ import { setItems, setCurrentTab } from './actions';
 import { reducer as BTCReducer } from './containers/btc-data/builder';
 import { reducer as LTCReducer } from './containers/ltc-data/builder';
 import { reducer as ETHReducer } from './containers/eth-data/builder';
+import resultReducer from './containers/results/reducer';
 import { BTC } from './constants';
 
 const initialState = {
@@ -29,5 +30,6 @@ export default combineReducers({
   btcData: BTCReducer,
   ltcData: LTCReducer,
   ethData: ETHReducer,
+  results: resultReducer,
 });
 

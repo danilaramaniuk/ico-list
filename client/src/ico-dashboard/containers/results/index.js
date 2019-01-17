@@ -5,6 +5,7 @@ import InputRange from 'react-input-range';
 import styled from 'styled-components';
 
 import 'react-input-range/lib/css/index.css';
+import { setValue as setValueAction } from './actions';
 import { Card } from '../../components';
 import { BTC, LTC, ETH } from '../../constants';
 
@@ -21,10 +22,15 @@ export class Results extends PureComponent {
       value: PropTypes.number.isRequired,
       txid: PropTypes.string.isRequired,
     })).isRequired,
-  };
-
-  state = {
-    value: { min: 0, max: this.max },
+    setValue: PropTypes.func.isRequired,
+    range: PropTypes.shape({
+      min: PropTypes.number.isRequired,
+      max: PropTypes.number.isRequired,
+    }).isRequired,
+    value: PropTypes.shape({
+      min: PropTypes.number.isRequired,
+      max: PropTypes.number.isRequired,
+    }).isRequired,
   };
 
   getAmount = (type) => {
@@ -41,11 +47,11 @@ export class Results extends PureComponent {
     return Math.max(...contributions.map(item => item.value));
   }
 
-  setRange = value => this.setState({ value });
 
   render() {
-    const { contributions } = this.props;
-    const { value: { min, max } } = this.state;
+    const {
+      contributions, setValue, range, value,
+    } = this.props;
 
     if (contributions.length === 0) {
       return <div>No data</div>;
@@ -58,15 +64,15 @@ export class Results extends PureComponent {
         <div><b>Ethereum</b>: {this.getAmount(ETH)}</div>
         <InputRangeWrapper>
           <InputRange
-            maxValue={this.max}
-            minValue={0}
-            value={this.state.value}
-            onChange={this.setRange}
+            maxValue={range.max}
+            minValue={range.min}
+            value={value}
+            onChange={setValue}
           />
         </InputRangeWrapper>
         {
           contributions
-            .filter(({ value }) => (value >= min && value <= max))
+            .filter(item => (item.value >= value.min && item.value <= value.max))
             .map(item => <Card item={item} key={item.txid} />)
         }
       </Fragment>
@@ -76,7 +82,9 @@ export class Results extends PureComponent {
 
 const mapStateToProps = ({ icoDashboard }) => ({
   contributions: icoDashboard.common.contributions,
+  range: icoDashboard.results.range,
+  value: icoDashboard.results.value,
 });
 
 
-export default connect(mapStateToProps)(Results);
+export default connect(mapStateToProps, { setValue: setValueAction })(Results);
