@@ -2,30 +2,28 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bdVaJa hIBYkg"
+  className="sc-htpNat jgwOvs"
 >
   <div
-    className="sc-bwzfXH APLCW"
+    className="sc-bdVaJa gNjpfy"
   >
     <div
-      className="sc-htpNat eIcVkJ"
+      className="sc-bwzfXH kkvabS"
+      onClick={[Function]}
     >
       Bitcoin
     </div>
     <div
-      className="sc-htpNat eIcVkJ"
-    >
-      Ethereum
-    </div>
-    <div
-      className="sc-htpNat eIcVkJ"
+      className="sc-bwzfXH kkvabS"
+      onClick={[Function]}
     >
       Litecoin
     </div>
     <div
-      className="sc-htpNat eIcVkJ"
+      className="sc-bwzfXH kkvabS"
+      onClick={[Function]}
     >
-      Common
+      Ethereum
     </div>
   </div>
   <div
