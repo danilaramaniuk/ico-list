@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import { ICODashboard } from '../index';
 
 jest.mock('../components/cryptocurrency-bar', () => () => <div>CryptocurrencyBar</div>);
+jest.mock('../containers/results', () => () => <div>results</div>);
 
 const props = {
   contributions: [
