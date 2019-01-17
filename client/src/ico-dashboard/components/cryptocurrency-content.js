@@ -2,6 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Bar } from 'react-chartjs-2';
 import styled from 'styled-components';
+import Card from './card';
 
 const BarWrapper = styled.div`
   width: 800px;
@@ -51,10 +52,6 @@ export default class CryptocurrencyContent extends PureComponent {
       return <div>No data</div>;
     }
 
-    const {
-      address, currency, value, txid,
-    } = contributions[barIndex];
-
     return (
       <Fragment>
         <BarWrapper>
@@ -67,13 +64,7 @@ export default class CryptocurrencyContent extends PureComponent {
             }}
           />
         </BarWrapper>
-        <div>
-          <div>bar number: { barIndex + 1 }</div>
-          <div>address: { address }</div>
-          <div>currency: { currency }</div>
-          <div>value: { value }</div>
-          <div>txid: { txid }</div>
-        </div>
+        <Card item={contributions[barIndex]} index={barIndex} />
       </Fragment>
     );
   }
