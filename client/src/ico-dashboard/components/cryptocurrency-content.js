@@ -16,17 +16,28 @@ export default class CryptocurrencyContent extends PureComponent {
       value: PropTypes.number.isRequired,
       txid: PropTypes.string.isRequired,
     })).isRequired,
+    label: PropTypes.string.isRequired,
+    barIndex: PropTypes.number.isRequired,
+    setBarIndex: PropTypes.func.isRequired,
   };
 
+  onBarClick = (dataset) => {
+    const { setBarIndex } = this.props;
+
+    if (dataset.length > 0) {
+      setBarIndex(dataset[0]._index);
+    }
+  }
+
   render() {
-    const { contributions } = this.props;
+    const { contributions, label, barIndex } = this.props;
 
     const data = {
       labels: contributions.map((item, index) => index + 1),
       datasets: [
         {
           data: contributions.map(({ value }) => value),
-          label: 'My First dataset',
+          label,
           backgroundColor: 'rgba(255,99,132,0.2)',
           borderColor: 'rgba(255,99,132,1)',
           borderWidth: 1,
@@ -36,22 +47,33 @@ export default class CryptocurrencyContent extends PureComponent {
       ],
     };
 
+    if (contributions.length === 0) {
+      return <div>No data</div>;
+    }
+
+    const {
+      address, currency, value, txid,
+    } = contributions[barIndex];
+
     return (
       <Fragment>
         <BarWrapper>
           <Bar
             data={data}
-            getElementAtEvent={dataset => console.log(dataset)}
+            getElementAtEvent={this.onBarClick}
             width={100}
             options={{
               maintainAspectRatio: false,
             }}
           />
         </BarWrapper>
-        {
-          contributions.map(({ currency, value, txid }) =>
-              (<div key={txid}>{currency} - {value}</div>))
-        }
+        <div>
+          <div>bar number: { barIndex + 1 }</div>
+          <div>address: { address }</div>
+          <div>currency: { currency }</div>
+          <div>value: { value }</div>
+          <div>txid: { txid }</div>
+        </div>
       </Fragment>
     );
   }

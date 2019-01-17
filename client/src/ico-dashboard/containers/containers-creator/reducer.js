@@ -2,6 +2,7 @@ import { handleActions } from 'redux-actions';
 
 const initialState = {
   contributions: [],
+  barIndex: 0,
 };
 
 export default actions => handleActions({
@@ -9,6 +10,12 @@ export default actions => handleActions({
     return {
       ...state,
       contributions: payload,
+    };
+  },
+  [actions.setBarIndex](state, { payload }) {
+    return {
+      ...state,
+      barIndex: payload,
     };
   },
 }, initialState);
