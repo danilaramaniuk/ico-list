@@ -3,15 +3,30 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import InputRange from 'react-input-range';
 import styled from 'styled-components';
+import {
+  BitcoinIcon,
+  EthereumIcon,
+  LitecoinIcon,
+} from '~/common/icons';
+import theme from '~/main-theme';
 
 import 'react-input-range/lib/css/index.css';
 import { setValue as setValueAction } from './actions';
-import { Card } from '../../components';
+import { Card, IconLabel } from '../../components';
 import { BTC, LTC, ETH } from '../../constants';
 
 const InputRangeWrapper = styled.div`
   margin: 32px 16px;
   width: 400px;
+`;
+
+const Header = styled.div`
+  display: flex;
+  margin: 32px 20px;
+`;
+
+const IconsWrapper = styled.div`
+  flex: 1;
 `;
 
 export class Results extends PureComponent {
@@ -59,17 +74,21 @@ export class Results extends PureComponent {
 
     return (
       <Fragment>
-        <div><b>Bitcoin</b>: {this.getAmount(BTC)}</div>
-        <div><b>Litecoin</b>: {this.getAmount(LTC)}</div>
-        <div><b>Ethereum</b>: {this.getAmount(ETH)}</div>
-        <InputRangeWrapper>
-          <InputRange
-            maxValue={range.max}
-            minValue={range.min}
-            value={value}
-            onChange={setValue}
-          />
-        </InputRangeWrapper>
+        <Header>
+          <IconsWrapper>
+            <IconLabel Icon={BitcoinIcon} label={`Bitcoin ${this.getAmount(BTC)}`} iconColor={theme.palette.primary.blue100} />
+            <IconLabel Icon={LitecoinIcon} label={`Litecoin ${this.getAmount(LTC)}`} iconColor={theme.palette.primary.blue100} />
+            <IconLabel Icon={EthereumIcon} label={`Ethereum ${this.getAmount(ETH)}`} iconColor={theme.palette.primary.blue100} />
+          </IconsWrapper>
+          <InputRangeWrapper>
+            <InputRange
+              maxValue={range.max}
+              minValue={range.min}
+              value={value}
+              onChange={setValue}
+            />
+          </InputRangeWrapper>
+        </Header>
         {
           contributions
             .filter(item => (item.value >= value.min && item.value <= value.max))

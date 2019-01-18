@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Bar } from 'react-chartjs-2';
 import styled from 'styled-components';
 import Card from './card';
+import IconLabel from './icon-label';
 
 const BarWrapper = styled.div`
   height: 400px;
@@ -10,16 +11,6 @@ const BarWrapper = styled.div`
   background: white;
   border-radius: 8px;
   padding: 20px 20px 60px 20px;
-`;
-
-const IconWrapper = styled.div`
-  display: flex;
-`;
-
-const IconLabel = styled.div`
-  line-height: 38px;
-  margin-left: 8px;
-  font-size: 24px;
 `;
 
 export default class CryptocurrencyBar extends PureComponent {
@@ -69,9 +60,7 @@ export default class CryptocurrencyBar extends PureComponent {
     return (
       <Fragment>
         <BarWrapper>
-          <IconWrapper>
-            <Icon /> <IconLabel>{label}</IconLabel>
-          </IconWrapper>
+          <IconLabel Icon={Icon} label={label} />
           <Bar
             data={data}
             getElementAtEvent={this.onBarClick}

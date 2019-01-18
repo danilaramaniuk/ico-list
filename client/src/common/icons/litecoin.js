@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default () => (
+const Litcoin = ({ iconColor }) => (
   <svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" >
     <title>iconfinder_LTC_1175271</title>
     <desc>Created with Sketch.</desc>
@@ -14,7 +15,7 @@ export default () => (
     </defs>
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Litecoin" transform="translate(-30.000000, -204.000000)">
-        <rect id="background" fill="#FFFFFF" x="0" y="0" width="1441" height="1024" />
+        <rect id="background" fill={iconColor} x="0" y="0" width="1441" height="1024" />
         <g id="menu">
           <g id="form">
             <g id="Rectangle">
@@ -32,3 +33,13 @@ export default () => (
     </g>
   </svg>
 );
+
+Litcoin.propTypes = {
+  iconColor: PropTypes.string,
+};
+
+Litcoin.defaultProps = {
+  iconColor: 'white',
+};
+
+export default Litcoin;

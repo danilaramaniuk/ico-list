@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-ifAKCX llZOEm"
+  className="sc-bZQynM cqGJRM"
 >
   <div>
     menu
   </div>
   <div
-    className="sc-EHOje cErkPQ"
+    className="sc-gzVnrw fYlcNg"
   />
 </div>
 `;
