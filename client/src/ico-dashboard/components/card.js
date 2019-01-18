@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CardWrapper = styled.div`
-    padding: 36px 26px 20px 26px;
-    border-radius: 8px;
-    margin: 8px 0;
-    display: flex;
-    background: white;
-    margin: 32px 20px;
+  padding: 36px 26px 20px 26px;
+  border-radius: 8px;
+  margin: 8px 0;
+  display: flex;
+  background: white;
+  margin: 32px 20px;
 `;
 
 const VerticalValue = styled.div`
-  flex: 1;
+  width: 15%;
 `;
 
 const Title = styled.div`
@@ -20,11 +20,22 @@ const Title = styled.div`
   text-transform: uppercase;
   margin-bottom: 16px;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const Value = styled.div`
   margin-bottom: 16px;
   color: ${props => props.theme.palette.primary.grey};
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+const HorizontalValues = styled.div`
+  overflow: hidden;
+  flex: 1;
 `;
 
 export default class Card extends PureComponent {
@@ -71,10 +82,10 @@ export default class Card extends PureComponent {
           <Title>address</Title>
           <Title>txid</Title>
         </VerticalValue>
-        <VerticalValue>
+        <HorizontalValues>
           <Value>{ address }</Value>
           <Value>{ txid }</Value>
-        </VerticalValue>
+        </HorizontalValues>
       </CardWrapper>
     );
   }
