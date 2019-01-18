@@ -7,7 +7,7 @@ import { actions as ETHActions } from './containers/eth-data/builder';
 import { setRange, setValue } from './containers/results/actions';
 import { BTC, LTC, ETH } from './constants';
 
-function* fetchInitialDataHandler() {
+export function* fetchInitialDataHandler() {
   try {
     const { data: { contributions } } = yield call(ContributionModel.getAllContribution);
 
