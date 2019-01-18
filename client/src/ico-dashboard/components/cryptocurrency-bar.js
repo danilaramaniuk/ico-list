@@ -5,9 +5,21 @@ import styled from 'styled-components';
 import Card from './card';
 
 const BarWrapper = styled.div`
-  width: 800px;
   height: 400px;
-  background: ${props => props.theme.palette.primary.blue100};
+  margin: 32px 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px 20px 60px 20px;
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+`;
+
+const IconLabel = styled.div`
+  line-height: 38px;
+  margin-left: 8px;
+  font-size: 24px;
 `;
 
 export default class CryptocurrencyBar extends PureComponent {
@@ -21,6 +33,8 @@ export default class CryptocurrencyBar extends PureComponent {
     label: PropTypes.string.isRequired,
     barIndex: PropTypes.number.isRequired,
     setBarIndex: PropTypes.func.isRequired,
+    color: PropTypes.string.isRequired,
+    Icon: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
   };
 
   onBarClick = (dataset) => {
@@ -32,7 +46,9 @@ export default class CryptocurrencyBar extends PureComponent {
   }
 
   render() {
-    const { contributions, label, barIndex } = this.props;
+    const {
+      contributions, label, barIndex, color, Icon,
+    } = this.props;
 
     const data = {
       labels: contributions.map((item, index) => index + 1),
@@ -40,11 +56,8 @@ export default class CryptocurrencyBar extends PureComponent {
         {
           data: contributions.map(({ value }) => value),
           label,
-          backgroundColor: 'rgba(255,99,132,0.2)',
-          borderColor: 'rgba(255,99,132,1)',
+          backgroundColor: color,
           borderWidth: 1,
-          hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-          hoverBorderColor: 'rgba(255,99,132,1)',
         },
       ],
     };
@@ -56,6 +69,9 @@ export default class CryptocurrencyBar extends PureComponent {
     return (
       <Fragment>
         <BarWrapper>
+          <IconWrapper>
+            <Icon /> <IconLabel>{label}</IconLabel>
+          </IconWrapper>
           <Bar
             data={data}
             getElementAtEvent={this.onBarClick}

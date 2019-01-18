@@ -5,6 +5,9 @@ export default {
       blue200: '#0392f2',
       blue300: '#34426d',
       grey: '#9b9b9b',
+      orange: '#f28931',
+      pink: '#ff6f79',
+      turquoise: '#00c3b3',
     },
   },
 };
