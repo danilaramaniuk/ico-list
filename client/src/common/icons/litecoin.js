@@ -14,7 +14,7 @@ export default () => (
     </defs>
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Litecoin" transform="translate(-30.000000, -204.000000)">
-        <rect id="background" fill="#F2F7FD" x="0" y="0" width="1441" height="1024" />
+        <rect id="background" fill="#FFFFFF" x="0" y="0" width="1441" height="1024" />
         <g id="menu">
           <g id="form">
             <g id="Rectangle">

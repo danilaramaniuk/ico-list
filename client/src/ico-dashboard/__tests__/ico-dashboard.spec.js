@@ -4,6 +4,10 @@ import { ICODashboard } from '../index';
 
 jest.mock('../components/cryptocurrency-bar', () => () => <div>CryptocurrencyBar</div>);
 jest.mock('../containers/results', () => () => <div>results</div>);
+jest.mock('../containers/results', () => () => <div>results</div>);
+jest.mock('../containers/results', () => () => <div>results</div>);
+jest.mock('../components/menu', () => () => <div>menu</div>);
+jest.mock('../components/menu-item', () => () => <div>menu-item</div>);
 
 const props = {
   contributions: [

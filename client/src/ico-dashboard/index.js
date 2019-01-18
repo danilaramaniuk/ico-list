@@ -66,9 +66,10 @@ export class ICODashboard extends PureComponent {
   }
 
   get menuItems() {
-    const { setCurrentTab } = this.props;
+    const { setCurrentTab, currentTab } = this.props;
 
     return menuItems.map(({ title, currency, icon }) => (<MenuItem
+      isActive={currency === currentTab}
       title={title}
       onClick={setCurrentTab}
       key={title}

@@ -7,6 +7,7 @@ import Card from './card';
 const BarWrapper = styled.div`
   width: 800px;
   height: 400px;
+  background: ${props => props.theme.palette.primary.blue100};
 `;
 
 export default class CryptocurrencyBar extends PureComponent {

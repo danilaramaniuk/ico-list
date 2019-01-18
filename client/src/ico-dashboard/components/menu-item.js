@@ -4,18 +4,32 @@ import styled from 'styled-components';
 
 const MenuItemWrapper = styled.div`
   display: flex;
+  border-bottom: 4px solid ${props => props.theme.palette.primary.blue100};
+  margin-left: 40px;
+  border-radius: 5px;
 `;
 
 const IconWrapper = styled.div`
   margin: auto 0;
 `;
 
+const EmptySpace = styled.div`
+  width: 38px;
+`;
+
 const MenuItem = styled.div`
-  height: 50px;
-  line-height: 50px;
-  padding: 12px;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  margin: 12px;
   font-size: 32px;
-  border-bottom: 4px solid;
+  color: ${props => props.theme.palette.primary.grey};
+  ${props =>
+    props.isActive &&
+    `
+    color: ${props.theme.palette.primary.blue300};
+    border-right: 4px solid ${props.theme.palette.primary.blue200};
+  `};
   cursor: pointer;
 `;
 
@@ -24,6 +38,7 @@ export class MenuItemComponent extends PureComponent {
     currency: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
+    isActive: PropTypes.bool.isRequired,
     Icon: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
   };
 
@@ -37,14 +52,14 @@ export class MenuItemComponent extends PureComponent {
   }
 
   render() {
-    const { title, Icon } = this.props;
+    const { title, Icon, isActive } = this.props;
 
     return (
       <MenuItemWrapper>
         <IconWrapper>
-          {Icon && <Icon />}
+          {Icon ? <Icon /> : <EmptySpace />}
         </IconWrapper>
-        <MenuItem onClick={this.onClick}>{title}</MenuItem>
+        <MenuItem isActive={isActive} onClick={this.onClick}>{title}</MenuItem>
       </MenuItemWrapper>
     );
   }
