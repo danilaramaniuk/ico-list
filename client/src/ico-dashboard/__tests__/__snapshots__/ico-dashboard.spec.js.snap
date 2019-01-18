@@ -1,14 +1,777 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`ICODashboard snapshots renders correctly 1`] = `
 <div
-  className="sc-gzVnrw gZxWXT"
+  className="sc-VigVT ceIGex"
 >
-  <div>
-    menu
+  <div
+    className="sc-htoDjs euHueH"
+  >
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <svg
+          height="35px"
+          version="1.1"
+          viewBox="0 0 35 35"
+          width="35px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Shape
+          </title>
+          <desc>
+            Created with Sketch.
+          </desc>
+          <defs>
+            <path
+              d="M0,0 L256,0 C258.761424,-5.07265313e-16 261,2.23857625 261,5 L261,1019 C261,1021.76142 258.761424,1024 256,1024 L0,1024 L0,0 Z"
+              id="path-1"
+            />
+            <filter
+              filterUnits="objectBoundingBox"
+              height="101.5%"
+              id="filter-2"
+              width="105.7%"
+              x="-2.9%"
+              y="-0.7%"
+            >
+              <feOffset
+                dx="0"
+                dy="0"
+                in="SourceAlpha"
+                result="shadowOffsetOuter1"
+              />
+              <feGaussianBlur
+                in="shadowOffsetOuter1"
+                result="shadowBlurOuter1"
+                stdDeviation="2.5"
+              />
+              <feColorMatrix
+                in="shadowBlurOuter1"
+                type="matrix"
+                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101477582 0"
+              />
+            </filter>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+            id="Page-1"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              id="Bitcoin"
+              transform="translate(-34.000000, -57.000000)"
+            >
+              <rect
+                fill="white"
+                height="1024"
+                id="background"
+                width="1441"
+                x="0"
+                y="0"
+              />
+              <g
+                id="menu"
+              >
+                <g
+                  id="form"
+                >
+                  <g
+                    id="Rectangle"
+                  >
+                    <use
+                      fill="black"
+                      fillOpacity="1"
+                      filter="url(#filter-2)"
+                    />
+                    <use
+                      fill="#FFFFFF"
+                      fillRule="evenodd"
+                    />
+                  </g>
+                </g>
+                <g
+                  fill="#F28931"
+                  fillRule="nonzero"
+                  id="Bitcoin"
+                  transform="translate(30.000000, 22.000000)"
+                >
+                  <path
+                    d="M20.2841926,53.4210322 L23.599982,53.4210322 C25.1474223,53.4210322 26.0683851,54.4526266 26.031597,55.926307 C26.031597,56.9946893 25.5525416,57.9526176 24.6683671,58.3210377 C24.3368241,58.4683697 23.8578588,58.5051578 23.4526496,58.5051578 L20.2841926,58.5051578 L20.2841926,53.4210322 Z M24.4105173,46.7158133 C25.0736032,47.0842334 25.4052362,47.8210737 25.4052362,48.6683679 C25.4052362,49.9947163 24.631516,50.9157666 23.3052542,50.9157666 L20.2841295,50.9157666 L20.2841295,46.4578473 L22.9368331,46.4578473 C23.5262528,46.4578473 24.0420962,46.5316033 24.4105173,46.7158133 Z M23.7474044,61.0472836 C23.7474044,62.7666372 23.7474044,63.6263142 23.7474044,63.6263142 C23.7474044,63.6263142 23.1701874,63.6263142 22.0157534,63.6263142 L22.0157534,61.0472836 L20.2105263,61.0472836 C20.2105263,62.7666372 20.2105263,63.6263142 20.2105263,63.6263142 C20.2105263,63.6263142 19.6333394,63.6263142 18.4789653,63.6263142 L18.4789653,61.0472836 C16.1701575,61.0472836 15.0157534,61.0472836 15.0157534,61.0472836 C15.0157534,61.0472836 15.0157534,60.2613625 15.0157534,58.6895207 L16.0842285,58.6895207 C16.6367701,58.6895207 17.0420693,58.2473447 17.0420693,57.7315925 L17.0420693,47.3052855 C17.0420693,46.7526553 16.599982,46.3474472 16.0842285,46.3474472 C15.3719118,46.3474472 15.0157534,46.3474472 15.0157534,46.3474472 C15.0157534,46.3474472 15.0157534,45.5614663 15.0157534,43.9895045 L18.4789653,43.9895045 C18.4789653,42.2702107 18.4789653,41.4105638 18.4789653,41.4105638 C18.4789653,41.4105638 19.0561523,41.4105638 20.2105263,41.4105638 L20.2105263,43.9895045 L22.0157534,43.9895045 C22.0157534,42.2702107 22.0157534,41.4105638 22.0157534,41.4105638 C22.0157534,41.4105638 22.5929704,41.4105638 23.7474044,41.4105638 L23.7474044,44.0262926 C24.6315789,44.0631706 25.331543,44.1737146 26.031597,44.4684687 C27.5789474,45.0578868 28.6474223,46.4946893 28.6474223,48.4105459 C28.6474223,50.0316482 27.9104904,51.3579067 26.5473504,52.0578689 C28.4631219,52.684255 29.3105083,54.3420556 29.3105083,56.147368 C29.2737203,58.4683427 27.7262797,60.1631112 25.8841745,60.7526194 C25.1474223,60.9736174 24.4842466,61.0472836 23.7474044,61.0472836 Z M4,52.499955 C4,62.1525438 11.8472965,70 21.5,70 C31.1526136,70 39,62.1525438 39,52.499955 C39,42.8473662 31.1526136,35 21.5,35 C11.8472965,35 4,42.8473662 4,52.499955 Z"
+                    id="Shape"
+                    transform="translate(21.500000, 52.500000) rotate(15.000000) translate(-21.500000, -52.500000) "
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div
+        className="sc-gqjmRU bICoUA"
+        onClick={[Function]}
+      >
+        Bitcoin
+      </div>
+    </div>
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <svg
+          height="35px"
+          version="1.1"
+          viewBox="0 0 35 35"
+          width="35px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            iconfinder_LTC_1175271
+          </title>
+          <desc>
+            Created with Sketch.
+          </desc>
+          <defs>
+            <path
+              d="M0,0 L256,0 C258.761424,-5.07265313e-16 261,2.23857625 261,5 L261,1019 C261,1021.76142 258.761424,1024 256,1024 L0,1024 L0,0 Z"
+              id="path-1"
+            />
+            <filter
+              filterUnits="objectBoundingBox"
+              height="101.5%"
+              id="filter-2"
+              width="105.7%"
+              x="-2.9%"
+              y="-0.7%"
+            >
+              <feOffset
+                dx="0"
+                dy="0"
+                in="SourceAlpha"
+                result="shadowOffsetOuter1"
+              />
+              <feGaussianBlur
+                in="shadowOffsetOuter1"
+                result="shadowBlurOuter1"
+                stdDeviation="2.5"
+              />
+              <feColorMatrix
+                in="shadowBlurOuter1"
+                type="matrix"
+                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101477582 0"
+              />
+            </filter>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+            id="Page-1"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              id="Litecoin"
+              transform="translate(-30.000000, -204.000000)"
+            >
+              <rect
+                fill="white"
+                height="1024"
+                id="background"
+                width="1441"
+                x="0"
+                y="0"
+              />
+              <g
+                id="menu"
+              >
+                <g
+                  id="form"
+                >
+                  <g
+                    id="Rectangle"
+                  >
+                    <use
+                      fill="black"
+                      fillOpacity="1"
+                      filter="url(#filter-2)"
+                    />
+                    <use
+                      fill="#FFFFFF"
+                      fillRule="evenodd"
+                    />
+                  </g>
+                </g>
+                <g
+                  fill="#00C3B3"
+                  fillRule="nonzero"
+                  id="Litcoin"
+                  transform="translate(30.000000, 167.000000)"
+                >
+                  <g
+                    id="iconfinder_LTC_1175271"
+                    transform="translate(0.000000, 37.000000)"
+                  >
+                    <path
+                      d="M17.4998457,0 C7.83490682,0 0,7.83506109 0,17.5001543 C0,27.1654017 7.83490682,35 17.4998457,35 C27.1650932,35 35,27.1654017 35,17.5001543 C35.0001543,7.83506109 27.1652474,0 17.4998457,0 Z M24.2930088,26.0338763 L10.6193694,26.0338763 L11.7686351,20.5473282 L9.5339689,22.079631 L10.0768234,19.0771936 L12.414075,17.4682216 L14.7067444,6.52489819 L18.9753795,6.52489819 L17.3969517,14.0390905 L22.9544613,10.2142725 L22.3031593,13.3253116 L16.7465753,17.1345489 L15.6472911,22.3687215 L25.0524497,22.3687215 L24.2930088,26.0338763 Z"
+                      id="LTC"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div
+        className="sc-gqjmRU fOVXVr"
+        onClick={[Function]}
+      >
+        Litecoin
+      </div>
+    </div>
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <svg
+          height="35px"
+          version="1.1"
+          viewBox="0 0 35 35"
+          width="35px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            iconfinder_ETH-alt_1175229
+          </title>
+          <desc>
+            Created with Sketch.
+          </desc>
+          <defs>
+            <path
+              d="M0,0 L256,0 C258.761424,-5.07265313e-16 261,2.23857625 261,5 L261,1019 C261,1021.76142 258.761424,1024 256,1024 L0,1024 L0,0 Z"
+              id="path-1"
+            />
+            <filter
+              filterUnits="objectBoundingBox"
+              height="101.5%"
+              id="filter-2"
+              width="105.7%"
+              x="-2.9%"
+              y="-0.7%"
+            >
+              <feOffset
+                dx="0"
+                dy="0"
+                in="SourceAlpha"
+                result="shadowOffsetOuter1"
+              />
+              <feGaussianBlur
+                in="shadowOffsetOuter1"
+                result="shadowBlurOuter1"
+                stdDeviation="2.5"
+              />
+              <feColorMatrix
+                in="shadowBlurOuter1"
+                type="matrix"
+                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101477582 0"
+              />
+            </filter>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+            id="Page-1"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              id="Ethereum"
+              transform="translate(-30.000000, -347.000000)"
+            >
+              <rect
+                fill="#FFFFFF"
+                height="1024"
+                id="background"
+                width="1441"
+                x="0"
+                y="0"
+              />
+              <g
+                id="menu"
+              >
+                <g
+                  id="form"
+                >
+                  <g
+                    id="Rectangle"
+                  >
+                    <use
+                      fill="black"
+                      fillOpacity="1"
+                      filter="url(#filter-2)"
+                      xlinkHref="#path-1"
+                    />
+                    <use
+                      fill="white"
+                      fillRule="evenodd"
+                      xlinkHref="#path-1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Litcoin"
+                  transform="translate(30.000000, 202.000000)"
+                />
+                <g
+                  fill="#FF6F79"
+                  fillRule="nonzero"
+                  id="ethereum"
+                  transform="translate(30.000000, 343.000000)"
+                >
+                  <g
+                    id="iconfinder_ETH-alt_1175229"
+                    transform="translate(0.000000, 4.000000)"
+                  >
+                    <path
+                      d="M17.4711674,0 C7.82211454,0 0,7.82211454 0,17.4711674 C0,27.1202203 7.82211454,34.9423348 17.4711674,34.9423348 C27.1202203,34.9423348 34.9423348,27.1202203 34.9423348,17.4711674 C34.9423348,7.82211454 27.1202203,0 17.4711674,0 Z M17.2446696,29.0462996 L10.3402643,19.2796035 L17.2446696,23.3220264 L17.2446696,29.0462996 Z M17.2446696,21.8905727 L10.2935463,17.8188546 L17.2446696,14.7740088 L17.2446696,21.8905727 Z M17.2446696,14.2847797 L10.5174229,17.2312555 L17.2446696,5.92856828 L17.2446696,14.2847797 Z M17.6927313,5.92517621 L24.5144934,17.2731938 L17.6927313,14.2847797 L17.6927313,5.92517621 Z M17.6927313,29.0462996 L17.6927313,23.3220264 L24.5971366,19.2796035 L17.6927313,29.0462996 Z M17.6927313,21.8907269 L17.6927313,14.774163 L24.6489427,17.8211674 L17.6927313,21.8907269 Z"
+                      id="Shape"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div
+        className="sc-gqjmRU fOVXVr"
+        onClick={[Function]}
+      >
+        Ethereum
+      </div>
+    </div>
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <div
+          className="sc-gZMcBi cESYOi"
+        />
+      </div>
+      <div
+        className="sc-gqjmRU fOVXVr"
+        onClick={[Function]}
+      >
+        Results
+      </div>
+    </div>
   </div>
   <div
-    className="sc-htoDjs ixhIYD"
-  />
+    className="sc-jTzLTM kVzGqJ"
+  >
+    <div>
+      btc-data
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ICODashboard snapshots renders correctly with ETH tab 1`] = `
+<div
+  className="sc-VigVT ceIGex"
+>
+  <div
+    className="sc-htoDjs euHueH"
+  >
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <svg
+          height="35px"
+          version="1.1"
+          viewBox="0 0 35 35"
+          width="35px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Shape
+          </title>
+          <desc>
+            Created with Sketch.
+          </desc>
+          <defs>
+            <path
+              d="M0,0 L256,0 C258.761424,-5.07265313e-16 261,2.23857625 261,5 L261,1019 C261,1021.76142 258.761424,1024 256,1024 L0,1024 L0,0 Z"
+              id="path-1"
+            />
+            <filter
+              filterUnits="objectBoundingBox"
+              height="101.5%"
+              id="filter-2"
+              width="105.7%"
+              x="-2.9%"
+              y="-0.7%"
+            >
+              <feOffset
+                dx="0"
+                dy="0"
+                in="SourceAlpha"
+                result="shadowOffsetOuter1"
+              />
+              <feGaussianBlur
+                in="shadowOffsetOuter1"
+                result="shadowBlurOuter1"
+                stdDeviation="2.5"
+              />
+              <feColorMatrix
+                in="shadowBlurOuter1"
+                type="matrix"
+                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101477582 0"
+              />
+            </filter>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+            id="Page-1"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              id="Bitcoin"
+              transform="translate(-34.000000, -57.000000)"
+            >
+              <rect
+                fill="white"
+                height="1024"
+                id="background"
+                width="1441"
+                x="0"
+                y="0"
+              />
+              <g
+                id="menu"
+              >
+                <g
+                  id="form"
+                >
+                  <g
+                    id="Rectangle"
+                  >
+                    <use
+                      fill="black"
+                      fillOpacity="1"
+                      filter="url(#filter-2)"
+                    />
+                    <use
+                      fill="#FFFFFF"
+                      fillRule="evenodd"
+                    />
+                  </g>
+                </g>
+                <g
+                  fill="#F28931"
+                  fillRule="nonzero"
+                  id="Bitcoin"
+                  transform="translate(30.000000, 22.000000)"
+                >
+                  <path
+                    d="M20.2841926,53.4210322 L23.599982,53.4210322 C25.1474223,53.4210322 26.0683851,54.4526266 26.031597,55.926307 C26.031597,56.9946893 25.5525416,57.9526176 24.6683671,58.3210377 C24.3368241,58.4683697 23.8578588,58.5051578 23.4526496,58.5051578 L20.2841926,58.5051578 L20.2841926,53.4210322 Z M24.4105173,46.7158133 C25.0736032,47.0842334 25.4052362,47.8210737 25.4052362,48.6683679 C25.4052362,49.9947163 24.631516,50.9157666 23.3052542,50.9157666 L20.2841295,50.9157666 L20.2841295,46.4578473 L22.9368331,46.4578473 C23.5262528,46.4578473 24.0420962,46.5316033 24.4105173,46.7158133 Z M23.7474044,61.0472836 C23.7474044,62.7666372 23.7474044,63.6263142 23.7474044,63.6263142 C23.7474044,63.6263142 23.1701874,63.6263142 22.0157534,63.6263142 L22.0157534,61.0472836 L20.2105263,61.0472836 C20.2105263,62.7666372 20.2105263,63.6263142 20.2105263,63.6263142 C20.2105263,63.6263142 19.6333394,63.6263142 18.4789653,63.6263142 L18.4789653,61.0472836 C16.1701575,61.0472836 15.0157534,61.0472836 15.0157534,61.0472836 C15.0157534,61.0472836 15.0157534,60.2613625 15.0157534,58.6895207 L16.0842285,58.6895207 C16.6367701,58.6895207 17.0420693,58.2473447 17.0420693,57.7315925 L17.0420693,47.3052855 C17.0420693,46.7526553 16.599982,46.3474472 16.0842285,46.3474472 C15.3719118,46.3474472 15.0157534,46.3474472 15.0157534,46.3474472 C15.0157534,46.3474472 15.0157534,45.5614663 15.0157534,43.9895045 L18.4789653,43.9895045 C18.4789653,42.2702107 18.4789653,41.4105638 18.4789653,41.4105638 C18.4789653,41.4105638 19.0561523,41.4105638 20.2105263,41.4105638 L20.2105263,43.9895045 L22.0157534,43.9895045 C22.0157534,42.2702107 22.0157534,41.4105638 22.0157534,41.4105638 C22.0157534,41.4105638 22.5929704,41.4105638 23.7474044,41.4105638 L23.7474044,44.0262926 C24.6315789,44.0631706 25.331543,44.1737146 26.031597,44.4684687 C27.5789474,45.0578868 28.6474223,46.4946893 28.6474223,48.4105459 C28.6474223,50.0316482 27.9104904,51.3579067 26.5473504,52.0578689 C28.4631219,52.684255 29.3105083,54.3420556 29.3105083,56.147368 C29.2737203,58.4683427 27.7262797,60.1631112 25.8841745,60.7526194 C25.1474223,60.9736174 24.4842466,61.0472836 23.7474044,61.0472836 Z M4,52.499955 C4,62.1525438 11.8472965,70 21.5,70 C31.1526136,70 39,62.1525438 39,52.499955 C39,42.8473662 31.1526136,35 21.5,35 C11.8472965,35 4,42.8473662 4,52.499955 Z"
+                    id="Shape"
+                    transform="translate(21.500000, 52.500000) rotate(15.000000) translate(-21.500000, -52.500000) "
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div
+        className="sc-gqjmRU fOVXVr"
+        onClick={[Function]}
+      >
+        Bitcoin
+      </div>
+    </div>
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <svg
+          height="35px"
+          version="1.1"
+          viewBox="0 0 35 35"
+          width="35px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            iconfinder_LTC_1175271
+          </title>
+          <desc>
+            Created with Sketch.
+          </desc>
+          <defs>
+            <path
+              d="M0,0 L256,0 C258.761424,-5.07265313e-16 261,2.23857625 261,5 L261,1019 C261,1021.76142 258.761424,1024 256,1024 L0,1024 L0,0 Z"
+              id="path-1"
+            />
+            <filter
+              filterUnits="objectBoundingBox"
+              height="101.5%"
+              id="filter-2"
+              width="105.7%"
+              x="-2.9%"
+              y="-0.7%"
+            >
+              <feOffset
+                dx="0"
+                dy="0"
+                in="SourceAlpha"
+                result="shadowOffsetOuter1"
+              />
+              <feGaussianBlur
+                in="shadowOffsetOuter1"
+                result="shadowBlurOuter1"
+                stdDeviation="2.5"
+              />
+              <feColorMatrix
+                in="shadowBlurOuter1"
+                type="matrix"
+                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101477582 0"
+              />
+            </filter>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+            id="Page-1"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              id="Litecoin"
+              transform="translate(-30.000000, -204.000000)"
+            >
+              <rect
+                fill="white"
+                height="1024"
+                id="background"
+                width="1441"
+                x="0"
+                y="0"
+              />
+              <g
+                id="menu"
+              >
+                <g
+                  id="form"
+                >
+                  <g
+                    id="Rectangle"
+                  >
+                    <use
+                      fill="black"
+                      fillOpacity="1"
+                      filter="url(#filter-2)"
+                    />
+                    <use
+                      fill="#FFFFFF"
+                      fillRule="evenodd"
+                    />
+                  </g>
+                </g>
+                <g
+                  fill="#00C3B3"
+                  fillRule="nonzero"
+                  id="Litcoin"
+                  transform="translate(30.000000, 167.000000)"
+                >
+                  <g
+                    id="iconfinder_LTC_1175271"
+                    transform="translate(0.000000, 37.000000)"
+                  >
+                    <path
+                      d="M17.4998457,0 C7.83490682,0 0,7.83506109 0,17.5001543 C0,27.1654017 7.83490682,35 17.4998457,35 C27.1650932,35 35,27.1654017 35,17.5001543 C35.0001543,7.83506109 27.1652474,0 17.4998457,0 Z M24.2930088,26.0338763 L10.6193694,26.0338763 L11.7686351,20.5473282 L9.5339689,22.079631 L10.0768234,19.0771936 L12.414075,17.4682216 L14.7067444,6.52489819 L18.9753795,6.52489819 L17.3969517,14.0390905 L22.9544613,10.2142725 L22.3031593,13.3253116 L16.7465753,17.1345489 L15.6472911,22.3687215 L25.0524497,22.3687215 L24.2930088,26.0338763 Z"
+                      id="LTC"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div
+        className="sc-gqjmRU fOVXVr"
+        onClick={[Function]}
+      >
+        Litecoin
+      </div>
+    </div>
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <svg
+          height="35px"
+          version="1.1"
+          viewBox="0 0 35 35"
+          width="35px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            iconfinder_ETH-alt_1175229
+          </title>
+          <desc>
+            Created with Sketch.
+          </desc>
+          <defs>
+            <path
+              d="M0,0 L256,0 C258.761424,-5.07265313e-16 261,2.23857625 261,5 L261,1019 C261,1021.76142 258.761424,1024 256,1024 L0,1024 L0,0 Z"
+              id="path-1"
+            />
+            <filter
+              filterUnits="objectBoundingBox"
+              height="101.5%"
+              id="filter-2"
+              width="105.7%"
+              x="-2.9%"
+              y="-0.7%"
+            >
+              <feOffset
+                dx="0"
+                dy="0"
+                in="SourceAlpha"
+                result="shadowOffsetOuter1"
+              />
+              <feGaussianBlur
+                in="shadowOffsetOuter1"
+                result="shadowBlurOuter1"
+                stdDeviation="2.5"
+              />
+              <feColorMatrix
+                in="shadowBlurOuter1"
+                type="matrix"
+                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101477582 0"
+              />
+            </filter>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+            id="Page-1"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              id="Ethereum"
+              transform="translate(-30.000000, -347.000000)"
+            >
+              <rect
+                fill="#FFFFFF"
+                height="1024"
+                id="background"
+                width="1441"
+                x="0"
+                y="0"
+              />
+              <g
+                id="menu"
+              >
+                <g
+                  id="form"
+                >
+                  <g
+                    id="Rectangle"
+                  >
+                    <use
+                      fill="black"
+                      fillOpacity="1"
+                      filter="url(#filter-2)"
+                      xlinkHref="#path-1"
+                    />
+                    <use
+                      fill="white"
+                      fillRule="evenodd"
+                      xlinkHref="#path-1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Litcoin"
+                  transform="translate(30.000000, 202.000000)"
+                />
+                <g
+                  fill="#FF6F79"
+                  fillRule="nonzero"
+                  id="ethereum"
+                  transform="translate(30.000000, 343.000000)"
+                >
+                  <g
+                    id="iconfinder_ETH-alt_1175229"
+                    transform="translate(0.000000, 4.000000)"
+                  >
+                    <path
+                      d="M17.4711674,0 C7.82211454,0 0,7.82211454 0,17.4711674 C0,27.1202203 7.82211454,34.9423348 17.4711674,34.9423348 C27.1202203,34.9423348 34.9423348,27.1202203 34.9423348,17.4711674 C34.9423348,7.82211454 27.1202203,0 17.4711674,0 Z M17.2446696,29.0462996 L10.3402643,19.2796035 L17.2446696,23.3220264 L17.2446696,29.0462996 Z M17.2446696,21.8905727 L10.2935463,17.8188546 L17.2446696,14.7740088 L17.2446696,21.8905727 Z M17.2446696,14.2847797 L10.5174229,17.2312555 L17.2446696,5.92856828 L17.2446696,14.2847797 Z M17.6927313,5.92517621 L24.5144934,17.2731938 L17.6927313,14.2847797 L17.6927313,5.92517621 Z M17.6927313,29.0462996 L17.6927313,23.3220264 L24.5971366,19.2796035 L17.6927313,29.0462996 Z M17.6927313,21.8907269 L17.6927313,14.774163 L24.6489427,17.8211674 L17.6927313,21.8907269 Z"
+                      id="Shape"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div
+        className="sc-gqjmRU bICoUA"
+        onClick={[Function]}
+      >
+        Ethereum
+      </div>
+    </div>
+    <div
+      className="sc-dnqmqq dFsPnQ"
+    >
+      <div
+        className="sc-iwsKbI kxpRnh"
+      >
+        <div
+          className="sc-gZMcBi cESYOi"
+        />
+      </div>
+      <div
+        className="sc-gqjmRU fOVXVr"
+        onClick={[Function]}
+      >
+        Results
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-jTzLTM kVzGqJ"
+  >
+    <div>
+      eth-data
+    </div>
+  </div>
 </div>
 `;

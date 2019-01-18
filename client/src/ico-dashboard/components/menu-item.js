@@ -6,7 +6,6 @@ const MenuItemWrapper = styled.div`
   display: flex;
   border-bottom: 4px solid ${props => props.theme.palette.primary.blue100};
   margin-left: 40px;
-  border-radius: 5px;
 `;
 
 const IconWrapper = styled.div`

@@ -36,12 +36,10 @@ export default class CryptocurrencyBar extends PureComponent {
     }
   }
 
-  render() {
-    const {
-      contributions, label, barIndex, color, Icon,
-    } = this.props;
+  get data() {
+    const { contributions, label, color } = this.props;
 
-    const data = {
+    return {
       labels: contributions.map((item, index) => index + 1),
       datasets: [
         {
@@ -52,6 +50,12 @@ export default class CryptocurrencyBar extends PureComponent {
         },
       ],
     };
+  }
+
+  render() {
+    const {
+      contributions, label, barIndex, Icon,
+    } = this.props;
 
     if (contributions.length === 0) {
       return <div>No data</div>;
@@ -62,7 +66,7 @@ export default class CryptocurrencyBar extends PureComponent {
         <BarWrapper>
           <IconLabel Icon={Icon} label={label} />
           <Bar
-            data={data}
+            data={this.data}
             getElementAtEvent={this.onBarClick}
             width={100}
             options={{

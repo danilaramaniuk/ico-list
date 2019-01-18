@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders correctly 1`] = `
+<div
+  className="sc-bdVaJa cxEflh"
+>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      currency
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      LTC
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      value
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      1822819
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      address
+    </div>
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      txid
+    </div>
+  </div>
+  <div
+    className="sc-ifAKCX gRAkOE"
+  >
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      rnu2xb48synW6Y1AU8ZT85OX0CWBD21N
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      4911922634ee442f6704ed6cf5f860dbe70e78d1c20414d6d6f2eb4bc81e1641
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card component renders with index correctly 1`] = `
+<div
+  className="sc-bdVaJa cxEflh"
+>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      index
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      2
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      currency
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      LTC
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      value
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      1822819
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH eHRqiU"
+  >
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      address
+    </div>
+    <div
+      className="sc-htpNat iNMcUK"
+    >
+      txid
+    </div>
+  </div>
+  <div
+    className="sc-ifAKCX gRAkOE"
+  >
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      rnu2xb48synW6Y1AU8ZT85OX0CWBD21N
+    </div>
+    <div
+      className="sc-bxivhb kwdKHT"
+    >
+      4911922634ee442f6704ed6cf5f860dbe70e78d1c20414d6d6f2eb4bc81e1641
+    </div>
+  </div>
+</div>
+`;
