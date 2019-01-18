@@ -15,12 +15,12 @@ const Ethereum = ({ iconColor }) => (
     </defs>
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Ethereum" transform="translate(-30.000000, -347.000000)">
-        <rect id="background" fill={iconColor} x="0" y="0" width="1441" height="1024" />
+        <rect id="background" fill="#FFFFFF" x="0" y="0" width="1441" height="1024" />
         <g id="menu">
           <g id="form">
             <g id="Rectangle">
               <use fill="black" fillOpacity="1" filter="url(#filter-2)" xlinkHref="#path-1" />
-              <use fill="#FFFFFF" fillRule="evenodd" xlinkHref="#path-1" />
+              <use fill={iconColor} fillRule="evenodd" xlinkHref="#path-1" />
             </g>
           </g>
           <g id="Litcoin" transform="translate(30.000000, 202.000000)" />
