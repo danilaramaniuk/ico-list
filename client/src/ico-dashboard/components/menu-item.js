@@ -2,6 +2,14 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+const MenuItemWrapper = styled.div`
+  display: flex;
+`;
+
+const IconWrapper = styled.div`
+  margin: auto 0;
+`;
+
 const MenuItem = styled.div`
   height: 50px;
   line-height: 50px;
@@ -16,7 +24,12 @@ export class MenuItemComponent extends PureComponent {
     currency: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
+    Icon: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
   };
+
+  static defaultProps = {
+    Icon: null,
+  }
 
   onClick = () => {
     const { currency, onClick } = this.props;
@@ -24,10 +37,15 @@ export class MenuItemComponent extends PureComponent {
   }
 
   render() {
-    const { title } = this.props;
+    const { title, Icon } = this.props;
 
     return (
-      <MenuItem onClick={this.onClick}>{title}</MenuItem>
+      <MenuItemWrapper>
+        <IconWrapper>
+          {Icon && <Icon />}
+        </IconWrapper>
+        <MenuItem onClick={this.onClick}>{title}</MenuItem>
+      </MenuItemWrapper>
     );
   }
 }

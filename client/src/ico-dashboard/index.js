@@ -2,6 +2,11 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import {
+  BitcoinIcon,
+  EthereumIcon,
+  LitecoinIcon,
+} from '~/common/icons';
 
 import {
   fetchInitialData as fetchInitialDataAction,
@@ -29,14 +34,17 @@ const menuItems = [
   {
     title: 'Bitcoin',
     currency: BTC,
+    icon: BitcoinIcon,
   },
   {
     title: 'Litecoin',
     currency: LTC,
+    icon: LitecoinIcon,
   },
   {
     title: 'Ethereum',
     currency: ETH,
+    icon: EthereumIcon,
   },
   {
     title: 'Results',
@@ -60,11 +68,12 @@ export class ICODashboard extends PureComponent {
   get menuItems() {
     const { setCurrentTab } = this.props;
 
-    return menuItems.map(({ title, currency }) => (<MenuItem
+    return menuItems.map(({ title, currency, icon }) => (<MenuItem
       title={title}
       onClick={setCurrentTab}
       key={title}
       currency={currency}
+      Icon={icon}
     />));
   }
 
