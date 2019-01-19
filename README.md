@@ -11,6 +11,8 @@ http://icolist-env.pms2mz993d.eu-central-1.elasticbeanstalk.com/
 * yarn install
 * yarn server
 
+open in http://localhost:8080/
+
 ## How to test:
 
   App has 4 tabs: Bitcoin, Litecoin, Ethereum and Results. On tabs Bitcoin, Litecoin, Ethereum you will find a bar chart and card with contribution information. On bar click information on the card will be updated. On the Results tab you will find a header with total amount for each cryptocurrency and slider. Also Results tab contains all contributions cards and it possible to filter by slider.
