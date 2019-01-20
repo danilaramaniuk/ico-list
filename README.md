@@ -25,7 +25,7 @@ open in http://localhost:8080/
 
 ## UI/UX:
 
- Content of the app is written by containers and on navigation between the tabs we we do not update a content. To reduce repeated containers code I made a container builder.
+ Content of the app is written by containers and on every tab click we do request to update values. To reduce repeated containers code I made a container builder.
 
 ## CI:
 

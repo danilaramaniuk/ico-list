@@ -2,7 +2,7 @@ import { call, put, takeEvery } from 'redux-saga/effects';
 import ContributionModel from '~/common/models/contribution';
 import { setItems, setRange, setValue, fetchContributions } from './actions';
 
-function* fetchContributionsHandler() {
+export function* fetchContributionsHandler() {
   try {
     const { data: { contributions } } =
       yield call(ContributionModel.getContributions);
