@@ -5,7 +5,7 @@ export default (actions, currency) => {
   function* fetchContributionsByCurrencyHandler() {
     try {
       const { data: { contributions } } =
-        yield call(ContributionModel.getContribution, currency);
+        yield call(ContributionModel.getContributions, currency);
 
       yield put(actions.setItems(contributions));
     } catch (e) {

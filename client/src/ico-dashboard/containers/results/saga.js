@@ -5,7 +5,7 @@ import { setItems, setRange, setValue, fetchContributions } from './actions';
 function* fetchContributionsHandler() {
   try {
     const { data: { contributions } } =
-      yield call(ContributionModel.getContribution);
+      yield call(ContributionModel.getContributions);
 
     const maxValue = Math.max(...contributions.map(item => item.value));
     const minValue = Math.min(...contributions.map(item => item.value));
