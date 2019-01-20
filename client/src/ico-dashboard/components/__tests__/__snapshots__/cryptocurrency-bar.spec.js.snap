@@ -96,8 +96,4 @@ Array [
 ]
 `;
 
-exports[`CryptocurrencyBar snapshots renders correctly with empty contributions 1`] = `
-<div>
-  No data
-</div>
-`;
+exports[`CryptocurrencyBar snapshots renders correctly with empty contributions 1`] = `null`;

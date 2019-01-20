@@ -78,7 +78,7 @@ export class Results extends PureComponent {
     } = this.props;
 
     if (contributions.length === 0) {
-      return <div>No data</div>;
+      return null;
     }
 
     return (
