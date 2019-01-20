@@ -1,9 +1,10 @@
 import { handleActions } from 'redux-actions';
-import { setRange, setValue } from './actions';
+import { setRange, setValue, setItems } from './actions';
 
 const initialState = {
   range: { min: 0, max: 0 },
   value: { min: 0, max: 0 },
+  contributions: [],
 };
 
 export default handleActions({
@@ -17,6 +18,12 @@ export default handleActions({
     return {
       ...state,
       value: payload,
+    };
+  },
+  [setItems](state, { payload }) {
+    return {
+      ...state,
+      contributions: payload,
     };
   },
 }, initialState);

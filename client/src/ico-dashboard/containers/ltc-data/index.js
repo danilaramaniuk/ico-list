@@ -1,8 +1,7 @@
 import { connect } from 'react-redux';
 import theme from '~/main-theme';
 import { LitecoinIcon } from '~/common/icons';
-import { CryptocurrencyBar } from '../../components';
-import { actions } from './builder';
+import { actions, Component } from './builder';
 
 const mapStateToProps = ({ icoDashboard }) => ({
   contributions: icoDashboard.ltcData.contributions,
@@ -16,4 +15,4 @@ const mapDispatchToProps = {
   setBarIndex: actions.setBarIndex,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CryptocurrencyBar);
+export default connect(mapStateToProps, mapDispatchToProps)(Component);

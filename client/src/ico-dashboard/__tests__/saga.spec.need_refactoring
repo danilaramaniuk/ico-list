@@ -15,7 +15,7 @@ describe('Fetch initial data flow', () => {
   const it = sagaHelper(fetchInitialDataHandler());
 
   it('call the mock API first', (result) => {
-    expect(result).toEqual(call(ContributionModel.getAllContribution));
+    expect(result).toEqual(call(ContributionModel.getContribution));
     return { data: { contributions } };
   });
 

@@ -8,7 +8,7 @@ const typeShard = `
 `;
 
 const queryShard = `
-  contributions: [Contribution!]!,
+  contributions(currency: String): [Contribution!]!,
 `;
 
 export {

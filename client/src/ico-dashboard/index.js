@@ -8,10 +8,7 @@ import {
   LitecoinIcon,
 } from '~/common/icons';
 
-import {
-  fetchInitialData as fetchInitialDataAction,
-  setCurrentTab as setCurrentTabAction,
-} from './actions';
+import { setCurrentTab as setCurrentTabAction } from './actions';
 import { Menu, MenuItem } from './components';
 import { BTC, LTC, ETH, ALL } from './constants';
 import BTCContent from './containers/btc-data';
@@ -54,16 +51,9 @@ const menuItems = [
 
 export class ICODashboard extends PureComponent {
   static propTypes = {
-    fetchInitialData: PropTypes.func.isRequired,
     setCurrentTab: PropTypes.func.isRequired,
     currentTab: PropTypes.string.isRequired,
   };
-
-  componentDidMount = async () => {
-    const { fetchInitialData } = this.props;
-
-    fetchInitialData();
-  }
 
   get menuItems() {
     const { setCurrentTab, currentTab } = this.props;
@@ -102,7 +92,6 @@ const mapStateToProps = ({ icoDashboard }) => ({
 });
 
 const mapDispatchToProps = {
-  fetchInitialData: fetchInitialDataAction,
   setCurrentTab: setCurrentTabAction,
 };
 

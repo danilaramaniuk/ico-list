@@ -11,7 +11,6 @@ jest.mock('../containers/results', () => () => <div>results</div>);
 const props = {
   contributions: getMockedContributions(),
   setItems: jest.fn(),
-  fetchInitialData: jest.fn(),
   setCurrentTab: jest.fn(),
   currentTab: BTC,
 };
@@ -26,11 +25,5 @@ describe('ICODashboard snapshots', () => {
     const updatedProps = { ...props, currentTab: ETH };
     const tree = renderWithTheme(<ICODashboard {...updatedProps} />).toJSON();
     expect(tree).toMatchSnapshot();
-  });
-});
-
-describe('ICODashboard instance', () => {
-  it('expect initial fetch', () => {
-    expect(props.fetchInitialData).toBeCalled();
   });
 });

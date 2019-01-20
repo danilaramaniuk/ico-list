@@ -1,16 +1,21 @@
 import apiUrl from '~/common/utils/getApi';
 
 export default class ContributionModel {
-  static getAllContribution() {
+  static getContribution(currency) {
     const graphqlQuery = {
-      query: `{
-        contributions {
-          address,
-          currency,
-          value,
-          txid
+      query: `
+        query FetchContributions($currency: String) {
+          contributions(currency: $currency) {
+            address,
+            currency,
+            value,
+            txid
+          }
         }
-      }`,
+      `,
+      variables: {
+        currency,
+      },
     };
 
     return fetch(apiUrl(), {

@@ -11,7 +11,10 @@ import {
 import theme from '~/main-theme';
 
 import 'react-input-range/lib/css/index.css';
-import { setValue as setValueAction } from './actions';
+import {
+  setValue as setValueAction,
+  fetchContributions as fetchContributionsAction,
+} from './actions';
 import { Card, IconLabel } from '../../components';
 import { BTC, LTC, ETH } from '../../constants';
 
@@ -46,7 +49,13 @@ export class Results extends PureComponent {
       min: PropTypes.number.isRequired,
       max: PropTypes.number.isRequired,
     }).isRequired,
+    fetchContributions: PropTypes.func.isRequired,
   };
+
+  componentDidMount() {
+    const { fetchContributions } = this.props;
+    fetchContributions();
+  }
 
   getAmount = (type) => {
     const { contributions } = this.props;
@@ -100,10 +109,16 @@ export class Results extends PureComponent {
 }
 
 const mapStateToProps = ({ icoDashboard }) => ({
-  contributions: icoDashboard.common.contributions,
+  contributions: icoDashboard.results.contributions,
   range: icoDashboard.results.range,
   value: icoDashboard.results.value,
 });
 
 
-export default connect(mapStateToProps, { setValue: setValueAction })(Results);
+export default connect(
+  mapStateToProps,
+  {
+    setValue: setValueAction,
+    fetchContributions: fetchContributionsAction,
+  },
+)(Results);
