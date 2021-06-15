@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'YOY'
                 sh 'node --version'
-                echo 'WOOORk'
             }
         }
     }
