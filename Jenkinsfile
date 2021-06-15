@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:14-alpine' } }
+    agent { docker { image 'node:latest' } }
     stages {
         stage('build') {
             steps {
-                echo 'Work pls'
+                sh 'npm -v' 
             }
         }
     }
