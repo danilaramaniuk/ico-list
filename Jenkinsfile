@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo 'YOY'
                 sh 'node --version'
+                echo 'WOOORk'
             }
         }
     }
