@@ -26,7 +26,10 @@ node {
           // dir("$WORKSPACE$PROJECTDIR") {
           //     sh "npm test -- --coverage"
           // }
-          sh "npm test -- --coverage"
+          dir("client") {
+              sh "npm test -- --coverage"
+          }
+          // sh "npm test -- --coverage"
            echo 'lol4'
         }
       } finally {
