@@ -11,7 +11,7 @@ node {
     echo 'TODO'
     script {
       // Building the Docker image
-      dockerImage = docker.build -t daniladanila2378/react-test -f ./client/Dockerfile.spec ./client
+      dockerImage = docker.build("daniladanila2378/react-test", "-f ./client/Dockerfile.spec ./client")
 
       try {
         dockerImage.inside() {
