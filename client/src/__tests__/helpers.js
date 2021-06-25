@@ -9,7 +9,7 @@ export const renderWithTheme = component =>
 export const getMockedContributions = () => ([
   {
     address: 'rnu2xb48synW6Y1AU8ZT85OX0CWBD21N',
-    currency: 'LTC',
+    currency: 'LTC2',
     value: 1822819,
     txid: '4911922634ee442f6704ed6cf5f860dbe70e78d1c20414d6d6f2eb4bc81e1641',
   },
